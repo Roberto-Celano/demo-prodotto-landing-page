@@ -1,6 +1,8 @@
 :root {
     --primary-color: #1E90FF;
     /* Blu acceso */
+    --title-color: #2f2f2f;
+    /* Grigio Scuro */
     --secondary-color: #333333;
     /* Grigio scuro */
     --accent-color: #FFD700;
@@ -26,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     /* Applica Poppins per i titoli */
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--title-color);
 }
 
 /* Spaziatura uniforme per tutte le sezioni */
@@ -78,6 +80,73 @@ section {
 .navbar a:hover {
     color: var(--primary-color);
     /* Colore di hover sui link della navbar */
+}
+
+/* Hero Section con immagine e parallax */
+#hero {
+    position: relative; /* La posizione relativa permette di inserire l'overlay e il contenuto */
+    height: 100vh; /* L'altezza della sezione copre l'intera schermata */
+    width: 100%; /* La larghezza copre l'intera area della pagina */
+    background-image: url('img/hero.jpg'); /* Inserisci il percorso corretto per l'immagine */
+    background-attachment: fixed; /* L'effetto parallax è ottenuto con l'attachment fisso */
+    background-position: center; /* Centra l'immagine all'interno della sezione */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    background-size: cover; /* Assicura che l'immagine copra tutta la sezione */
+    color: var(--text-color-light); /* Imposta il colore chiaro per il testo */
+    text-align: center; /* Centra il testo orizzontalmente */
+}
+
+/* Contenuto della sezione hero */
+.hero-content {
+    position: relative; /* Posiziona il contenuto sopra l'overlay */
+    z-index: 1; /* Imposta il contenuto su un livello superiore rispetto all'overlay */
+}
+
+/* Overlay per migliorare la leggibilità del testo */
+.overlay {
+    position: absolute; /* L'overlay copre l'intera sezione */
+    top: 0; /* Posiziona l'overlay in alto */
+    left: 0; /* Posiziona l'overlay a sinistra */
+    height: 100%; /* L'overlay copre l'intera altezza della sezione */
+    width: 100%; /* L'overlay copre l'intera larghezza della sezione */
+    background-color: rgba(0, 0, 0, 0.5); /* Imposta un overlay nero semi-trasparente */
+    z-index: 0; /* L'overlay rimane sotto il contenuto della hero */
+}
+
+/* Stile per il titolo della sezione */
+.titolo-prodotto {
+    font-family: 'Poppins', sans-serif; /* Applica il font Poppins per il titolo */
+    font-size: 3rem; /* Dimensione del titolo */
+    color: var(--text-color-light); /* Colore del testo chiaro */
+}
+
+/* Stile per lo slogan */
+.slogan {
+    font-family: 'Roboto', sans-serif; /* Applica il font Roboto per lo slogan */
+    font-size: 1.5rem; /* Dimensione del testo per lo slogan */
+    color: var(--text-color-light); /* Colore del testo chiaro */
+    margin-bottom: 30px; /* Spaziatura inferiore */
+}
+
+/* Stile per il pulsante di call-to-action */
+.pulsante-cta {
+    font-size: 1.2rem; /* Dimensione del testo del pulsante */
+    padding: 15px 30px; /* Spaziatura interna del pulsante */
+    border-radius: 50px; /* Angoli arrotondati per il pulsante */
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+/* Hover sul pulsante di call-to-action */
+.pulsante-cta:hover {
+    background-color: var(--primary-color); /* Cambia il colore di sfondo del pulsante al passaggio del mouse */
+}
+
+/* Effetto parallax per la sezione */
+.parallax {
+    background-attachment: fixed; /* Rende l'immagine di sfondo fissa, creando l'effetto parallax */
+    background-position: center; /* Mantiene l'immagine centrata */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    background-size: cover; /* Adatta l'immagine all'intera sezione */
 }
 
 /* Stile per la sezione Caratteristiche del Prodotto */

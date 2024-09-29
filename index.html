@@ -16,7 +16,7 @@
 </head>
 <body>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <!-- Nome del sito o del prodotto -->
     <a class="navbar-brand" href="#">Il Prodotto Innovativo</a>
@@ -45,11 +45,18 @@
 </nav>
 
   <!-- Sezione Hero -->
-  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1 class="titolo-prodotto mt-5">Il Prodotto Innovativo</h1>
-    <p class="slogan">Scopri l'innovazione nel tuo quotidiano.</p>
-    <a href="#contatti" class="btn btn-warning pulsante-cta">Contattaci Ora</a>
-  </section>
+  <section id="hero" class="d-flex flex-column align-items-center justify-content-center parallax">
+    <!-- Overlay per migliorare la leggibilità del testo -->
+    <div class="overlay"></div>
+    
+    <!-- Contenuto della sezione hero, che include titolo, slogan e pulsante di call-to-action -->
+    <div class="hero-content">
+        <h1 class="titolo-prodotto mt-5">Il Prodotto Innovativo</h1>
+        <p class="slogan">Scopri l'innovazione nel tuo quotidiano.</p>
+        <a href="#contatti" class="btn btn-warning pulsante-cta">Contattaci Ora</a>
+    </div>
+</section>
+  
   <!-- Sezione Caratteristiche del Prodotto -->
 <section id="features" class="py-5">
   <div class="container">
@@ -57,12 +64,12 @@
     <h2 class="text-center mb-4">Caratteristiche del Prodotto</h2>
 
     <!-- Griglia Bootstrap per disporre le caratteristiche su 3 colonne -->
-    <div class="row">
+    <div class="row text-center">
       <!-- Prima caratteristica -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <div class="card h-100">
           <div class="card-body">
-              <i class="fas fa-bolt fa-3x mb-3" style="color: var(--primary-color);"></i>
+              <i class="fas fa-bolt fa-3x mb-3" style="color: #5f5f5f"></i>
             <h5 class="card-title">Caratteristica 1</h5>
             <p class="card-text">Descrizione breve della prima caratteristica del prodotto.</p>
           </div>
@@ -70,10 +77,11 @@
       </div>
       
       <!-- Seconda caratteristica -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <div class="card h-100">
-           <i class="fas fa-cogs fa-3x mb-3" style="color: var(--primary-color);"></i>
           <div class="card-body">
+           <i class="fas fa-cogs fa-3x mb-3" style="color:
+           var(--primary-color);"></i>
             <h5 class="card-title">Caratteristica 2</h5>
             <p class="card-text">Descrizione breve della seconda caratteristica del prodotto.</p>
           </div>
@@ -81,10 +89,11 @@
       </div>
 
       <!-- Terza caratteristica -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-3">
         <div class="card h-100">
-           <i class="fas fa-heart fa-3x mb-3" style="color: var(--primary-color);"></i>
           <div class="card-body">
+            <i class="fas fa-battery-full fa-3x mb-3" style="color:
+            var(--primary-color);"></i>
             <h5 class="card-title">Caratteristica 3</h5>
             <p class="card-text">Descrizione breve della terza caratteristica del prodotto.</p>
           </div>
@@ -199,11 +208,13 @@
       <!-- Prima domanda -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapse1"
+          aria-expanded="false" aria-controls="collapse1">
             Quanto costa il prodotto?
           </button>
         </h2>
-        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Il costo del prodotto varia in base al modello scelto. Contattaci per un preventivo personalizzato.
           </div>
@@ -251,17 +262,18 @@
     <h2 class="mb-4">Seguici sui nostri canali social</h2>
     
     <!-- Icone social -->
-    <a href="https://www.linkedin.com/in/roberto-celano" target="_blank" class="mx-3">
-      <i class="fab fa-linkedin fa-2x"></i>
+    <a href="https://www.linkedin.com/in/roberto-celano" target="_blank"
+    class="mx-3">
+      <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
     </a>
     <a href="https://github.com/Roberto-Celano" target="_blank" class="mx-3">
-      <i class="fab fa-github fa-2x"></i>
+      <i class="fab fa-github fa-2x" style="color: black;"></i>
     </a>
     <a href="#" target="_blank" class="mx-3">
-      <i class="fab fa-facebook fa-2x"></i>
+      <i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i>
     </a>
     <a href="#" target="_blank" class="mx-3">
-      <i class="fab fa-instagram fa-2x"></i>
+      <i class="fab fa-instagram fa-2x" style="color: #d62967;"></i>
     </a>
   </div>
 </section>
