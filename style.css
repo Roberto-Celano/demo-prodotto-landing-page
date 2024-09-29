@@ -1,3 +1,9 @@
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Aggiunge una leggera ombra alla navbar */
+}
+
 /* Stile per la sezione Caratteristiche del Prodotto */
 #features {
     background-color: #f8f9fa;
@@ -55,10 +61,41 @@
     display: none;
 }
 
-/* Navbar */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Aggiunge una leggera ombra alla navbar */
+/* Stile per la sezione FAQ */
+#faq {
+    background-color: #f8f9fa;
+    /* Sfondo chiaro */
+    padding: 60px 0;
+    /* Spaziatura verticale */
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* Rimuove l'effetto di focus */
+}
+
+/* Stile per la sezione Social */
+#social {
+    background-color: #f8f9fa;
+    /* Sfondo chiaro */
+    padding: 60px 0;
+    /* Spaziatura verticale */
+}
+
+#social i {
+    color: #007bff;
+    /* Colore delle icone social */
+    transition: color 0.3s;
+    /* Aggiunge una transizione quando si passa sopra */
+}
+
+#social i:hover {
+    color: #0056b3;
+    /* Colore quando si passa sopra le icone */
 }
 
 /* Footer */
