@@ -1,0 +1,13 @@
+/* Stile per la sezione Caratteristiche del Prodotto */
+#features {
+    background-color: #f8f9fa;
+    /* Colore di sfondo chiaro */
+}
+
+/* Stile per le card */
+.card {
+    border: none;
+    /* Rimuove il bordo predefinito della card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Aggiunge un'ombra leggera alle card */
+}
