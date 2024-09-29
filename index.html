@@ -55,6 +55,61 @@
   </div>
 </section>
 
+<!-- Sezione Testimonianze con Carosello Bootstrap -->
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <!-- Titolo della sezione, centrato -->
+    <h2 class="text-center mb-4">Cosa dicono i nostri clienti</h2>
+
+    <!-- Inizio del carosello Bootstrap -->
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicatori per il carosello -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Elementi del carosello -->
+      <div class="carousel-inner">
+        <!-- Prima testimonianza (attiva) -->
+        <div class="carousel-item active">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Prodotto fantastico! Mi ha davvero cambiato la vita."</p>
+            <footer class="blockquote-footer">Mario Rossi</footer>
+          </blockquote>
+        </div>
+
+        <!-- Seconda testimonianza -->
+        <div class="carousel-item">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Servizio eccezionale e qualità superiore!"</p>
+            <footer class="blockquote-footer">Giulia Bianchi</footer>
+          </blockquote>
+        </div>
+
+        <!-- Terza testimonianza -->
+        <div class="carousel-item">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">"Non posso più vivere senza questo prodotto."</p>
+            <footer class="blockquote-footer">Luca Verdi</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Controlli per scorrere il carosello -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Precedente</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Successivo</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 
   <!-- Link JS per Bootstrap 5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

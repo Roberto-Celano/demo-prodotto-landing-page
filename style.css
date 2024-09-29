@@ -11,3 +11,33 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Aggiunge un'ombra leggera alle card */
 }
+
+/* Spaziatura della sezione testimonianze */
+#testimonials {
+    background-color: #f8f9fa;
+    /* Colore di sfondo chiaro */
+    padding: 80px 0;
+    /* Maggiore spaziatura verticale */
+}
+
+/* Stile per le testimonianze all'interno del carosello */
+.carousel-item blockquote {
+    font-size: 1.2rem;
+    /* Dimensione del testo leggermente più grande */
+    line-height: 1.6;
+    /* Interlinea comoda */
+    color: #555;
+    /* Colore del testo */
+    background: #ffffff;
+    /* Sfondo bianco per il blocco delle testimonianze */
+    padding: 40px;
+    /* Spaziatura interna aumentata */
+    border-radius: 8px;
+    /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombra leggera */
+    max-width: 800px;
+    /* Larghezza massima delle testimonianze */
+    margin: 0 auto;
+    /* Centra il blocco della testimonianza */
+}

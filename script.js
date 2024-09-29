@@ -18,3 +18,16 @@ gsap.from(".card", {
         toggleActions: "play none none none"  // L'animazione viene eseguita solo una volta
     }
 });
+
+// Animazione per il carosello delle testimonianze
+gsap.from("#testimonialsCarousel", {
+    duration: 1.5,           // Durata dell'animazione
+    opacity: 0,              // Partenza da un'opacità di 0 (invisibile)
+    y: 50,                   // Partenza da una posizione più bassa di 50px
+    scrollTrigger: {
+        trigger: "#testimonials",  // L'animazione si attiva quando la sezione testimonials entra in vista
+        start: "top 80%",          // Inizia quando la parte superiore della sezione raggiunge l'80% della viewport
+        toggleActions: "play none none none"  // Esegue l'animazione solo una volta
+    }
+});
+
