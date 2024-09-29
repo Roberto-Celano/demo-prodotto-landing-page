@@ -98,6 +98,17 @@
     /* Colore quando si passa sopra le icone */
 }
 
+#social a {
+    text-decoration: none;
+    /* Eliminazione sottolineature agli elementi a */
+}
+
+#social a:hover i {
+    transform: scale(1.2);
+    /* Le icone si ingrandiscono leggermente */
+    transition: transform 0.3s ease;
+    /* Transizione fluida */
+}
 /* Footer */
 footer {
     background-color: #f8f9fa;

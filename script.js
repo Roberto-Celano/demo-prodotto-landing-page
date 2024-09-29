@@ -63,3 +63,27 @@ gsap.from("#contact", {
     }
 });
 
+// Animazione di entrata per la sezione FAQ
+gsap.from("#faq .accordion-item", {
+    duration: 1,           // Durata dell'animazione
+    opacity: 0,            // Inizia da opacità 0 (invisibile)
+    y: 50,                 // Inizia 50px più in basso
+    stagger: 0.2,          // Ritardo tra ogni elemento
+    scrollTrigger: {
+        trigger: "#faq",     // Attiva l'animazione quando la sezione FAQ entra in vista
+        start: "top 80%"     // Inizia quando il top della sezione è all'80% della viewport
+    }
+});
+
+// Animazione di entrata per la sezione Social
+gsap.from("#social a", {
+    duration: 1,           // Durata dell'animazione
+    opacity: 0,            // Le icone iniziano invisibili
+    scale: 0.5,            // Iniziano più piccole
+    stagger: 0.2,          // Ritardo tra l'entrata di ogni icona
+    scrollTrigger: {
+        trigger: "#social",  // Attiva l'animazione quando la sezione social entra in vista
+        start: "top 80%"     // Inizia quando il top della sezione è all'80% della viewport
+    }
+});
+
