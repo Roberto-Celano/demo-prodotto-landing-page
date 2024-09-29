@@ -41,3 +41,44 @@
     margin: 0 auto;
     /* Centra il blocco della testimonianza */
 }
+
+/* Stile per la sezione del modulo di contatto */
+#contact {
+    background-color: #f8f9fa;
+    /* Sfondo chiaro */
+    padding: 60px 0;
+    /* Spaziatura verticale */
+}
+
+/* Messaggio di conferma (inizialmente nascosto) */
+#confirmationMessage {
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Aggiunge una leggera ombra alla navbar */
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    /* Sfondo chiaro */
+    color: #333;
+    /* Colore del testo scuro */
+    padding: 20px 0;
+    /* Spaziatura verticale */
+}
+
+footer a {
+    color: #007bff;
+    /* Colore dei link nel footer */
+    text-decoration: none;
+    /* Rimuove la sottolineatura */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Sottolineatura quando si passa sopra */
+}

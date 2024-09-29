@@ -31,3 +31,35 @@ gsap.from("#testimonialsCarousel", {
     }
 });
 
+// Validazione del modulo di contatto e messaggio di conferma
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Impedisce l'invio del form
+
+    // Ottieni i valori dei campi
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Verifica che i campi non siano vuoti
+    if (name && email && message) {
+        // Mostra il messaggio di conferma
+        document.getElementById('confirmationMessage').classList.remove('d-none');
+        // Reset del modulo
+        document.getElementById('contactForm').reset();
+    } else {
+        alert("Per favore, compila tutti i campi.");
+    }
+});
+
+// Animazione per il modulo di contatto
+gsap.from("#contact", {
+    duration: 1.5,
+    opacity: 0,
+    y: 50,
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        toggleActions: "play none none none"
+    }
+});
+
