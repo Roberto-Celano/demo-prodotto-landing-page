@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Demo Landing Page Prodotto
 
 ## Panoramica del Progetto
@@ -31,9 +30,5 @@ Questo progetto è una demo di una landing page per un prodotto fittizio, svilup
 Il progetto è disponibile live su **GitHub Pages**: [Link alla Demo](https://roberto-celano.github.io/landing-page-demo-prodotto/).
 
 ## Contatti
-Per ulteriori informazioni o richieste, contattami su [LinkedIn](https://linkedin.com/in/robertocelano) o via email a [roberto.celano88@gmail.com].
+Per ulteriori informazioni o richieste, contattami su [LinkedIn](https://linkedin.com/in/roberto-celano) o via email a [roberto.celano88@gmail.com].
 
-=======
-# landing-page-demo-prodotto
-Progetto di una landing page per un prodotto fittizio, sviluppata per dimostrare competenze in HTML, CSS, JavaScript e GSAP. Il design è completamente responsive e include animazioni fluide per migliorare l'esperienza utente.
->>>>>>> e7bfe86fae12de714a8e5137f9472b2f18de356f
