@@ -1,12 +1,87 @@
+:root {
+    --primary-color: #1E90FF;
+    /* Blu acceso */
+    --secondary-color: #333333;
+    /* Grigio scuro */
+    --accent-color: #FFD700;
+    /* Giallo oro */
+    --background-color: #f9f9f9;
+    /* Sfondo chiaro */
+    --text-color: #333;
+    /* Colore del testo principale */
+    --text-color-light: #fff;
+    /* Colore del testo chiaro */
+    --hover-color: #1c7ed6;
+    /* Blu scuro per hover */
+}
+
+/* Spaziatura uniforme per tutte le sezioni */
+section {
+    padding: 80px 0;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+/* Aumenta il padding delle sezioni principali */
+#features,
+#testimonials,
+#contact,
+#faq,
+#social {
+    padding: 100px 0;
+}
+
+/* Bottoni */
+.btn-primary {
+    background-color: var(--accent-color);
+    /* Colore accento sui bottoni */
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    /* Colore primario al passaggio del mouse */
+    border-color: var(--primary-color);
+}
+
+/* Bottoni */
+.btn-primary {
+    background-color: var(--accent-color);
+    /* Colore accento sui bottoni */
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    /* Colore primario al passaggio del mouse */
+    border-color: var(--primary-color);
+}
+
 /* Navbar */
 .navbar {
+    background-color: var(--secondary-color);
+    /* Navbar scura*/
+    color: var(--light-color);
+    /* Testo chiaro sulla navbar */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Aggiunge una leggera ombra alla navbar */
+    /* Aggiunge una leggera ombra */
+}
+
+.navbar a {
+    color: var(--text-color-light);
+    /* Link chiari nella navbar */
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    /* Colore di hover sui link della navbar */
 }
 
 /* Stile per la sezione Caratteristiche del Prodotto */
 #features {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     /* Colore di sfondo chiaro */
 }
 
@@ -20,7 +95,7 @@
 
 /* Spaziatura della sezione testimonianze */
 #testimonials {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     /* Colore di sfondo chiaro */
     padding: 80px 0;
     /* Maggiore spaziatura verticale */
@@ -34,7 +109,7 @@
     /* Interlinea comoda */
     color: #555;
     /* Colore del testo */
-    background: #ffffff;
+    background: var(--background-color);
     /* Sfondo bianco per il blocco delle testimonianze */
     padding: 40px;
     /* Spaziatura interna aumentata */
@@ -48,9 +123,13 @@
     /* Centra il blocco della testimonianza */
 }
 
+.blockquote-footer{
+    background-color: var(--background-color);
+}
+
 /* Stile per la sezione del modulo di contatto */
 #contact {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
@@ -63,14 +142,20 @@
 
 /* Stile per la sezione FAQ */
 #faq {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
 }
 
+.accordion-collapse {
+    transition: height 0.3s ease;
+}
+
 .accordion-button {
     font-weight: bold;
+    color: var(--primary-color);
+    /* Colore del testo delle domande */
 }
 
 .accordion-button:focus {
@@ -80,21 +165,21 @@
 
 /* Stile per la sezione Social */
 #social {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
 }
 
 #social i {
-    color: #007bff;
+    color: var(--primary-color);
     /* Colore delle icone social */
     transition: color 0.3s;
     /* Aggiunge una transizione quando si passa sopra */
 }
 
 #social i:hover {
-    color: #0056b3;
+    color: var(--hover-color);
     /* Colore quando si passa sopra le icone */
 }
 
@@ -109,18 +194,19 @@
     transition: transform 0.3s ease;
     /* Transizione fluida */
 }
+
 /* Footer */
 footer {
-    background-color: #f8f9fa;
-    /* Sfondo chiaro */
-    color: #333;
-    /* Colore del testo scuro */
+    background-color: var(--secondary-color);
+    /* Footer scuro*/
+    color: var(--text-color-light);
+    /* Testo chiaro sul footer */
     padding: 20px 0;
     /* Spaziatura verticale */
 }
 
 footer a {
-    color: #007bff;
+    color: var(--primary-color);
     /* Colore dei link nel footer */
     text-decoration: none;
     /* Rimuove la sottolineatura */
@@ -129,4 +215,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     /* Sottolineatura quando si passa sopra */
+}
+
+/* Stile per il divisore */
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 0;
 }

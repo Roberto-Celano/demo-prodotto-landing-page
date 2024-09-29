@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <!-- Nome del sito o del prodotto -->
     <a class="navbar-brand" href="#">Il Prodotto Innovativo</a>
@@ -58,6 +58,7 @@
       <div class="col-md-4">
         <div class="card h-100">
           <div class="card-body">
+              <i class="fas fa-bolt fa-3x mb-3" style="color: var(--primary-color);"></i>
             <h5 class="card-title">Caratteristica 1</h5>
             <p class="card-text">Descrizione breve della prima caratteristica del prodotto.</p>
           </div>
@@ -67,6 +68,7 @@
       <!-- Seconda caratteristica -->
       <div class="col-md-4">
         <div class="card h-100">
+           <i class="fas fa-cogs fa-3x mb-3" style="color: var(--primary-color);"></i>
           <div class="card-body">
             <h5 class="card-title">Caratteristica 2</h5>
             <p class="card-text">Descrizione breve della seconda caratteristica del prodotto.</p>
@@ -77,6 +79,7 @@
       <!-- Terza caratteristica -->
       <div class="col-md-4">
         <div class="card h-100">
+           <i class="fas fa-heart fa-3x mb-3" style="color: var(--primary-color);"></i>
           <div class="card-body">
             <h5 class="card-title">Caratteristica 3</h5>
             <p class="card-text">Descrizione breve della terza caratteristica del prodotto.</p>
@@ -87,8 +90,11 @@
   </div>
 </section>
 
+<!-- Divisore tra le sezioni -->
+<hr class="my-0">
+
 <!-- Sezione Testimonianze con Carosello Bootstrap -->
-<section id="testimonials" class="py-5 bg-light">
+<section id="testimonials" class="py-5">
   <div class="container">
     <!-- Titolo della sezione, centrato -->
     <h2 class="text-center mb-4">Cosa dicono i nostri clienti</h2>
@@ -105,7 +111,8 @@
       <!-- Elementi del carosello -->
       <div class="carousel-inner">
         <!-- Prima testimonianza (attiva) -->
-        <div class="carousel-item active">
+        <div class="carousel-item active text-center">
+           <img src="img/carousel1.jpg" alt="Mario Rossi" class="rounded-circle mb-3" width="220" height="200">
           <blockquote class="blockquote text-center">
             <p class="mb-0">"Prodotto fantastico! Mi ha davvero cambiato la vita."</p>
             <footer class="blockquote-footer">Mario Rossi</footer>
@@ -113,7 +120,8 @@
         </div>
 
         <!-- Seconda testimonianza -->
-        <div class="carousel-item">
+        <div class="carousel-item text-center">
+        <img src="img/carousel2.jpg" alt="Giulia Bianchi" class="rounded-circle mb-3" width="220" height="200">
           <blockquote class="blockquote text-center">
             <p class="mb-0">"Servizio eccezionale e qualità superiore!"</p>
             <footer class="blockquote-footer">Giulia Bianchi</footer>
@@ -121,7 +129,8 @@
         </div>
 
         <!-- Terza testimonianza -->
-        <div class="carousel-item">
+        <div class="carousel-item text-center">
+      <img src="img/carousel3.jpg" alt="Giulia Bianchi" class="rounded-circle mb-3" width="220" height="200">
           <blockquote class="blockquote text-center">
             <p class="mb-0">"Non posso più vivere senza questo prodotto."</p>
             <footer class="blockquote-footer">Luca Verdi</footer>
@@ -171,6 +180,9 @@
     </div>
   </div>
 </section>
+
+<!-- Divisore tra le sezioni -->
+<hr class="my-0">
 
 <!-- Sezione FAQ -->
 <section id="faq" class="py-5">
@@ -225,8 +237,11 @@
   </div>
 </section>
 
+<!-- Divisore tra le sezioni -->
+<hr class="my-0">
+
 <!-- Sezione Social -->
-<section id="social" class="py-5 bg-light">
+<section id="social" class="py-5">
   <div class="container text-center">
     <!-- Titolo della sezione -->
     <h2 class="mb-4">Seguici sui nostri canali social</h2>
@@ -248,7 +263,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-light py-4 mt-5">
+<footer class="py-4 mt-5">
   <div class="container text-center">
     <!-- Testo del footer -->
     <p class="mb-1">© 2024 Roberto Celano - All rights reserved</p>
