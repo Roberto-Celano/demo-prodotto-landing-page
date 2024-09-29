@@ -15,6 +15,20 @@
     /* Blu scuro per hover */
 }
 
+/* Integra i font */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Applica Roboto per il testo del corpo */
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    /* Applica Poppins per i titoli */
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
 /* Spaziatura uniforme per tutte le sezioni */
 section {
     padding: 80px 0;
@@ -31,19 +45,6 @@ section {
 #faq,
 #social {
     padding: 100px 0;
-}
-
-/* Bottoni */
-.btn-primary {
-    background-color: var(--accent-color);
-    /* Colore accento sui bottoni */
-    border-color: var(--accent-color);
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-color);
-    /* Colore primario al passaggio del mouse */
-    border-color: var(--primary-color);
 }
 
 /* Bottoni */
