@@ -7,7 +7,7 @@
     /* Grigio scuro */
     --accent-color: #FFD700;
     /* Giallo oro */
-    --background-color: #f9f9f9;
+    --background-color: #d3d3d3;
     /* Sfondo chiaro */
     --text-color: #333;
     /* Colore del testo principale */
@@ -17,6 +17,10 @@
     /* Blu scuro per hover */
     --footer-color: #002155;
     /* Blu extra scuro */
+    --background-section-light: #e0e0e0;
+    /* Azzurrino Chiaro */
+    --background-section-extralight: #ededed;
+    /* Celestino Chiarissimo */
 }
 
 /* Integra i font */
@@ -24,6 +28,7 @@ body {
     font-family: 'Roboto', sans-serif;
     /* Applica Roboto per il testo del corpo */
     color: var(--text-color);
+    background-color: var(--background-section-extralight);
 }
 
 h1,
@@ -54,19 +59,6 @@ section {
 #faq,
 #social {
     padding: 100px 0;
-}
-
-/* Bottoni */
-.btn-primary {
-    background-color: var(--accent-color);
-    /* Colore accento sui bottoni */
-    border-color: var(--accent-color);
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-color);
-    /* Colore primario al passaggio del mouse */
-    border-color: var(--primary-color);
 }
 
 /* Navbar */
@@ -184,7 +176,7 @@ section {
 
 /* Stile per la sezione Caratteristiche del Prodotto */
 #features {
-    background-color: var(--background-color);
+    background-color: var(--background-section-light);
     /* Colore di sfondo chiaro */
 }
 
@@ -208,17 +200,19 @@ section {
 .carousel-item blockquote {
     font-size: 1.2rem;
     /* Dimensione del testo leggermente più grande */
+    font-weight: bolder;
+    /* Peso maggiore del testo per maggior risalto */
     line-height: 1.6;
     /* Interlinea comoda */
     color: #555;
     /* Colore del testo */
-    background: var(--background-color);
+    background: white;
     /* Sfondo bianco per il blocco delle testimonianze */
     padding: 40px;
     /* Spaziatura interna aumentata */
     border-radius: 8px;
     /* Angoli arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
     /* Ombra leggera */
     max-width: 800px;
     /* Larghezza massima delle testimonianze */
@@ -227,15 +221,31 @@ section {
 }
 
 .blockquote-footer {
-    background-color: var(--background-color);
+    margin-top: 20px;
+    background-color: white;
 }
 
 /* Stile per la sezione del modulo di contatto */
 #contact {
-    background-color: var(--background-color);
+    background-color: var(--background-section-extralight);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
+}
+
+/* Stile bottone Form */
+#btn-form {
+    background-color: var(--footer-color);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#btn-form:hover {
+    background-color: var(--primary-color);
+    color: black;
 }
 
 /* Messaggio di conferma (inizialmente nascosto) */
@@ -245,7 +255,7 @@ section {
 
 /* Stile per la sezione FAQ */
 #faq {
-    background-color: var(--background-color);
+    background-color: var(--background-section-extralight);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
@@ -268,7 +278,7 @@ section {
 
 /* Stile per la sezione Social */
 #social {
-    background-color: var(--background-color);
+    background-color: var(--background-section-light);
     /* Sfondo chiaro */
     padding: 60px 0;
     /* Spaziatura verticale */
@@ -304,7 +314,7 @@ footer {
     /* Footer scuro*/
     color: var(--text-color-light);
     /* Testo chiaro sul footer */
-    padding: 20px 0;
+    padding: 20 px;
     /* Spaziatura verticale */
 }
 
