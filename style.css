@@ -105,7 +105,7 @@ section {
     /* L'overlay copre l'intera altezza della sezione */
     width: 100%;
     /* L'overlay copre l'intera larghezza della sezione */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     /* Imposta un overlay nero semi-trasparente */
     z-index: 0;
     /* L'overlay rimane sotto il contenuto della hero */
@@ -216,7 +216,7 @@ section {
     /* Ombra leggera */
     max-width: 800px;
     /* Larghezza massima delle testimonianze */
-    margin: 0 auto;
+    margin: 0px auto 70px auto;
     /* Centra il blocco della testimonianza */
 }
 
@@ -227,6 +227,10 @@ section {
 
 /* Stile per la sezione del modulo di contatto */
 #contact {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    visibility: visible;
     background-color: var(--background-section-extralight);
     /* Sfondo chiaro */
     padding: 60px 0;
@@ -235,17 +239,13 @@ section {
 
 /* Stile bottone Form */
 #btn-form {
-    background-color: var(--footer-color);
-    color: white;
-    border: 1px solid transparent;
     border-radius: 50px;
-    border: none;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 #btn-form:hover {
-    background-color: var(--primary-color);
-    color: black;
+     background-color: var(--primary-color);
+    /* Cambia il colore di sfondo del pulsante al passaggio del mouse */
 }
 
 /* Messaggio di conferma (inizialmente nascosto) */
@@ -336,6 +336,31 @@ hr {
     height: 1px;
     background-color: var(--secondary-color);
     margin: 0;
+}
+
+/* Stile del pulsante Back to Top */
+.back-to-top {
+    position: fixed; /* Posiziona il pulsante in un punto fisso dello schermo */
+    bottom: 15px; /* Distanza dal fondo della finestra */
+    right: 15px; /* Distanza dal lato destro della finestra */
+    background-color: var(--primary-color); /* Usa il colore principale come sfondo */
+    color: white; /* Colore dell'icona */
+    padding: 10px 15px; /* Spaziatura interna del pulsante */
+    border-radius: 50%; /* Rende il pulsante rotondo */
+    display: none; /* Nasconde il pulsante finché l'utente non scorre */
+    z-index: 999; /* Assicura che il pulsante sia sopra gli altri elementi */
+    transition: opacity 0.3s ease; /* Transizione fluida per l'apparizione e la scomparsa */
+}
+
+/* Stile del pulsante al passaggio del mouse */
+.back-to-top:hover {
+    background-color: var(--hover-color); /* Cambia il colore di sfondo quando si passa sopra */
+    cursor: pointer; /* Cambia il cursore a una mano quando si passa sopra */
+}
+
+/* Stile per l'icona all'interno del pulsante */
+.back-to-top i {
+    font-size: 24px; /* Dimensione dell'icona */
 }
 
 /* Media Queries per cambiare immagine di sfondo */
