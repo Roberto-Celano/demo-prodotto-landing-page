@@ -3,7 +3,7 @@
     /* Blu acceso */
     --title-color: #2f2f2f;
     /* Grigio Scuro */
-    --secondary-color: #333333;
+    --secondary-color: #002855;
     /* Grigio scuro */
     --accent-color: #FFD700;
     /* Giallo oro */
@@ -15,6 +15,8 @@
     /* Colore del testo chiaro */
     --hover-color: #1c7ed6;
     /* Blu scuro per hover */
+    --footer-color: #002155;
+    /* Blu extra scuro */
 }
 
 /* Integra i font */
@@ -68,7 +70,7 @@ section {
     /* Navbar scura*/
     color: var(--light-color);
     /* Testo chiaro sulla navbar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     /* Aggiunge una leggera ombra */
 }
 
@@ -87,7 +89,7 @@ section {
     position: relative; /* La posizione relativa permette di inserire l'overlay e il contenuto */
     height: 100vh; /* L'altezza della sezione copre l'intera schermata */
     width: 100%; /* La larghezza copre l'intera area della pagina */
-    background-image: url('img/hero.jpg'); /* Inserisci il percorso corretto per l'immagine */
+    background-image: url('img/hero1.jpg'); /* Inserisci il percorso corretto per l'immagine */
     background-attachment: fixed; /* L'effetto parallax è ottenuto con l'attachment fisso */
     background-position: center; /* Centra l'immagine all'interno della sezione */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
@@ -100,6 +102,11 @@ section {
 .hero-content {
     position: relative; /* Posiziona il contenuto sopra l'overlay */
     z-index: 1; /* Imposta il contenuto su un livello superiore rispetto all'overlay */
+}
+
+#logo-hero{
+ width: 50px;
+ height: 2rem;
 }
 
 /* Overlay per migliorare la leggibilità del testo */
@@ -224,7 +231,7 @@ section {
 
 .accordion-button {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--text-color);
     /* Colore del testo delle domande */
 }
 
@@ -267,7 +274,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--footer-color);
     /* Footer scuro*/
     color: var(--text-color-light);
     /* Testo chiaro sul footer */
