@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Landing Page Prodotto</title>
+  <!-- Impostazioni base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Titolo e Descrizione -->
+    <title>TIMETECH - Il Prodotto Innovativo per il Tuo Quotidiano</title>
+    <meta name="description" content="TIMETECH: Scopri l'innovazione che semplifica il tuo quotidiano con tecnologie avanzate. Contattaci ora per maggiori informazioni.">
+    
+    <!-- Parole chiave (opzionale per SEO moderno, ma utile) -->
+    <meta name="keywords" content="tecnologia, innovazione, prodotti tecnologici, soluzioni innovative, TIMETECH, contattaci">
+        <!-- Autore della pagina -->
+    <meta name="author" content="Roberto Celano, Web Developer & Web Designer">
+
+    <!-- SEO: Motori di ricerca (Google, Bing, ecc.) -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Meta tag Open Graph (per Facebook, LinkedIn, ecc.) -->
+    <meta property="og:title" content="TIMETECH - Il Prodotto Innovativo per il Tuo Quotidiano">
+    <meta property="og:description" content="Scopri come TIMETECH può migliorare la tua vita quotidiana con soluzioni tecnologiche innovative.">
+    <meta property="og:image" content="https://example.com/path-to-your-image.jpg">
+    <meta property="og:url" content="https://example.com/timetech">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TIMETECH">
+
+    <!-- Meta tag per Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TIMETECH - Il Prodotto Innovativo per il Tuo Quotidiano">
+    <meta name="twitter:description" content="Scopri TIMETECH, la soluzione tecnologica per semplificare il tuo quotidiano.">
+    <meta name="twitter:image" content="https://example.com/path-to-your-image.jpg">
+
+    <!-- Favicon (icona del sito) -->
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+
   <!-- Link a Google Fonts -->
   <link
   href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
@@ -11,7 +43,7 @@
   <!-- Link a Bootstrap 5 -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!-- Link alla CDN di FontAwesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -72,7 +104,7 @@
           <div class="card-body">
               <i class="fas fa-bolt fa-3x mb-3" style="color:
               var(--primary-color);"></i>
-            <h5 class="card-title">Caratteristica 1</h5>
+            <h3 class="card-title">Caratteristica 1</h3>
             <p class="card-text">Descrizione breve della prima caratteristica del prodotto.</p>
           </div>
         </div>
@@ -84,7 +116,7 @@
           <div class="card-body">
            <i class="fas fa-cogs fa-3x mb-3" style="color:
            var(--primary-color);"></i>
-            <h5 class="card-title">Caratteristica 2</h5>
+            <h3 class="card-title">Caratteristica 2</h3>
             <p class="card-text">Descrizione breve della seconda caratteristica del prodotto.</p>
           </div>
         </div>
@@ -96,7 +128,7 @@
           <div class="card-body">
             <i class="fas fa-battery-full fa-3x mb-3" style="color:
             var(--primary-color);"></i>
-            <h5 class="card-title">Caratteristica 3</h5>
+            <h3 class="card-title">Caratteristica 3</h3>
             <p class="card-text">Descrizione breve della terza caratteristica del prodotto.</p>
           </div>
         </div>
@@ -248,16 +280,16 @@
     
     <!-- Icone social -->
     <a href="https://www.linkedin.com/in/roberto-celano" target="_blank"
-    class="mx-3">
+    class="mx-3" aria-label="Visita il nostro profilo LinkedIn">
       <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
     </a>
-    <a href="https://github.com/Roberto-Celano" target="_blank" class="mx-3">
+    <a href="https://github.com/Roberto-Celano" target="_blank" class="mx-3" aria-label="Visita il nostro profilo GitHub">
       <i class="fab fa-github fa-2x" style="color: black;"></i>
     </a>
-    <a href="#" target="_blank" class="mx-3">
+    <a href="#" target="_blank" class="mx-3"  aria-label="Visita il nostro profilo Facebook">
       <i class="fab fa-facebook fa-2x" style="color: #3b5998;"></i>
     </a>
-    <a href="#" target="_blank" class="mx-3">
+    <a href="#" target="_blank" class="mx-3"  aria-label="Visita il nostro profilo Instagram">
       <i class="fab fa-instagram fa-2x" style="color: #d62967;"></i>
     </a>
   </div>
@@ -280,14 +312,14 @@
     <i class="fas fa-arrow-up"></i>
 </a>
   <!-- Link JS per Bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   
   <!-- Link a GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" defer></script>
   <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
   
   <!-- Script personalizzato -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
