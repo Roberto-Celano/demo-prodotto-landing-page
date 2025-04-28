@@ -23,6 +23,11 @@ Progetto pensato per dimostrare competenze front-end moderne: design responsive,
 
 ---
 
+## 📸 Demo Live
+[Visualizza il progetto in funzione → Timetech Demo](https://roberto-celano.github.io/demo-prodotto-landing-page/)
+
+---
+
 ## 🛠️ Tecnologie Utilizzate
 
 - **HTML5** — Struttura semantica del sito.
@@ -41,3 +46,36 @@ git clone https://github.com/Roberto-Celano/landing-page-demo-prodotto.git
 cd landing-page-demo-prodotto
 ```
 2. Apri il file **index.html** nel browser per visualizzare la demo.
+
+---
+
+## 🤝 Contribuire
+
+I contributi sono benvenuti!  
+Apri una pull request o segnala un problema nella sezione Issues.
+
+---
+
+## 📬 Contatti
+  📧 **Email:** [r.celano@robertocelano.dev](mailto:r.celano@robertocelano.dev)
+
+  💼 **LinkedIn:** [linkedin.com/in/roberto-celano](https://www.linkedin.com/in/roberto-celano)
+
+  🌐 **Portfolio:** [robertocelano.dev](https://www.robertocelano.dev)
+
+---
+
+## ⚖️ Licenza
+Questo progetto è distribuito sotto licenza MIT.
+Consulta il file [LICENSE.md] per maggiori dettagli.
+
+---
+
+## ⭐ Supporta il progetto!
+Se ti piace il lavoro svolto, lascia una ⭐ su GitHub per supportare il progetto e il mio percorso di crescita!
+
+---
+
+## 👨‍💻 Autore
+Realizzato da [Roberto Celano](https://www.robertocelano.dev)  
+Web Developer | Appassionato di Web Design e Backend Development
